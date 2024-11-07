@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+
+        p:is(.element-1-ex3){ /* Instead create a normal class called '.centered' to handle the aligment in exercise 3 */
+            text-align: center;
+        }
+
+        /* Create a class for div called 'excercise' for better organization */
+        div {  
+            display: block;
+            margin: auto;
+            height: auto;
+            width: auto;
+        }
+
+        .element-1-ex1 {
+            font-weight: bold;
+            color: blue;
+        }
+
+        .element-2-ex1 {
+            text-decoration: underline;
+            background-color: green;
+        }
+
+        .element-1-ex1, .element-2-ex1 {
+            font-size: 20px;
+            font-family: Arial, Georgia, serif;
+        }
+
+        .element-1-ex2 {
+            border-color: red;
+            
+        }
+        .element-2-ex2 {
+            box-shadow: 2px 2px 5px black;
+            background-color: gray;
+        }
+        .element-1-ex2, .element-2-ex2 {
+            font-size: 24px;
+            font-family: Arial, 'Georgia', serif;
+        }
+
+        .element-1-ex3, .element-2-ex3 {
+            font-size: 24px;
+            font-family: 'Courier New', 'Verdana', monospace;
+        }
+
+        .element-1-ex3 {
+            background-color: lightgray;
+        }
+
+        .element-2-ex3 {
+            border-style: dotted;
+            color: darkgreen;
+        }
+
+        .element-1-ex4, .element-2-ex4 {
+            font-size: 16px;
+            font-family: 'Palatino', 'Garamond', serif;
+        }
+
+        .element-1-ex4 {
+            background-color: purple;
+            padding: 10px;
+        }
+
+        .element-2-ex4 {
+            /* Specify border property with width, color, and style to see double border effect */
+            border: 2px double navy;
+        }
+
+        .element-1-ex5, .element-2-ex5 {
+            font-size: 22px;
+            font-family: 'Trebuchet MS', Tahoma, sans-serif;
+        }
+
+        .element-1-ex5 {
+            text-transform: uppercase;
+            background-color: coral;
+        }
+
+        .element-2-ex5 {
+            text-transform: lowercase;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise 1</h1>
+        <div>
+            <p class="element-1-ex1">bold text and a blue text color.</p>
+            <p class="element-2-ex1">underlined text and a green background</p>
+        </div>
+    </h1>
+    <h2>Exercise 2</h2>
+    <div>
+        <button class="element-1-ex2">Element 1, a red border and italicized text</button>
+        <button class="element-2-ex2">Element 2, a shadow effect and a gray background</button>
+    </div>
+    <h2>Exercise 3</h2>
+    <div>
+        <p class="element-1-ex3">light gray background and everything centered!</p>
+        <p class="element-2-ex3">Dotted border and text color of dark green</p>
+    </div>
+    <h2>Exercise 4</h2>
+    <div>
+        <p class="element-1-ex4">A purple background and padding of 10 px</p>
+        <p class="element-2-ex4">A double border and a text color of navy blue</p>
+    </div>
+    <h2>Exercise 5</h2>
+    <div>
+        <p class="element-1-ex5">Uppercase text and a background color of coral</p>
+        <p class="element-2-ex5">Lowercase text and a background color of light blue</p>
+    </div>
+</body>
+</html>

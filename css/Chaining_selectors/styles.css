@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Exercise 1: Chaining Class Selectors */
+div.box.highlight {
+    background-color: lightyellow;
+    color: darkgreen; /* Changed to dark green */
+    border: 2px solid orange; /* Added solid orange border */
+    padding: 10px;
+}
+
+/* Exercise 2: Chaining Element and Class Selectors */
+button.cta {
+    background-color: blue;
+    color: white;
+    border: 5px solid;
+    border-radius: 5px;
+    font-size: 18px; /* Added font size */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+}
+
+/* Exercise 3: Chaining Pseudo-Class with Class Selector */
+p.note:hover {
+    background-color: lightblue;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* Exercise 4: Chaining Descendant Selectors */
+div.card span {
+    color: #301934; /* Dark purple */
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Exercise 5: Chaining Class and Attribute Selectors */
+input.form-control[type="text"] {
+    border: 1px solid gray; /* Corrected border property */
+    padding: 8px;
+    background-color: lightgray;
+}
+
+/* When hovered, the border color will change */
+input.form-control[type="text"]:focus {
+    border-color: blue;
+}
+
+/* Exercise 6: Chaining Element, Class, and Pseudo-Class Selectors */
+a.special:visited {
+    color: darkred;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Exercise 7: Chaining Sibling Selectors with Class */
+.item + .item {
+    margin-top: 20px;
+    background-color: lightgreen;
+    font-size: 18px;
+}
+
+/* Exercise 8: Chaining Multiple Pseudo-Classes */
+li.highlight:first-child {
+    background-color: lightpink;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}

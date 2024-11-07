@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining selectors</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        div.box.highlight{
+            background-color: lightyellow;
+            color: darkgreen;
+            border: 2px, solid orange;
+            padding: 10px;
+        }
+        button.cta {
+            background-color: blue;
+            color: white;
+            border: 5px, solid;
+            border-radius: 5px;
+            font-size: 18px; /* Added the font size */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow effect  */
+
+        }
+        p.note:hover {
+            background-color: lightblue;
+            font-weight: bold;
+            padding: 15px;
+        }
+        div.card span {
+            /* color : darkpurple */
+            color: #301934; 
+            font-size: 20px;
+            font-style: italic;
+        }
+        input.form-control[type="text"] {
+            border: 1px solid gray;
+            padding: 8px;
+            background-color: lightgray;
+            
+        }
+        /* When hovered border color will change */
+        input.form-control[type="text"]:focus {
+            border-color: blue;
+        }
+        a.special:visited{
+            color: darkred;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .item + .item{
+            margin-top: 20px;
+            background-color: lightgreen;
+            font-size: 18px;
+        }
+        li.highlight:first-child {
+            background-color: lightpink;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise 1: Chaining Class Selectors</h1>
+    <div class="box highlight">
+        <p>Setting the text in dark green, 2px solid border and 10 for padding inside.</p>
+    </div>
+    <h2>Exercise 2: Chaining Element And Class Selectors</h2>
+    <button class="cta">Rounded button with shadow effect</button>
+    <h2>Exercise 3: Chaining Pseudo-Class with Class Selector.</h2>
+    <p class="note">Background in blue on hover and padding to 15px only when on hover.</p>
+    <h2>Exercise 4: Chaining Descendant Selectors.</h2>
+    <div class="card">
+        <span>Inline element span with 20 px font size and italicized.</span>
+    </div>
+    <h2>Exercise 5: Chaining Class and Attribute Selectors</h2>
+    <input class="form-control" type="text">
+    <h2>Exercise 6: Chaining Element, Class, and Pseudo-Class selectors</h2>
+    <a class="special" href="./link-coolwebsite.html">Style should change to underline and bold</a>
+    <h2>Exercise 7: Chaining Sibling Selectors with Class</h2>
+    <div>
+        <div class="item">This should have 20px of space between siblings and color light green as background with font of 18px</div>
+        <div class="item">This should have 20px of space between siblings and color light green as background with font of 18px</div>
+        <div class="item">This should have 20px of space between siblings and color light green as background with font of 18px</div>
+        <div class="item">This should have 20px of space between siblings and color light green as background with font of 18px</div>
+    </div>
+    <h2>Exercise 8: Chaining Multiple Pseudo-Classes</h2>
+    <ul>
+        <li class="highlight">First item (highlighted)</li>
+        <li>Second item</li>
+        <li class="highlight">Third item (highlighted)</li>
+        <li>Fourth item</li>
+    </ul>
+</body>
+</html>
+
+<!-- 
+### Exercise 1: Chaining Class Selectors
+- **Objective**: Style a `<div>` element that has both `.box` and `.highlight` classes.
+- **Requirements**:
+  - Apply a background color of light yellow.
+  - Set the text color to dark green.
+  - Add a 2px solid border in orange.
+  - Add 10px padding inside the element.
+
+---
+
+### Exercise 2: Chaining Element and Class Selectors
+- **Objective**: Style any `<button>` with the `.cta` class.
+- **Requirements**:
+  - Set the background color to blue and text color to white.
+  - Add rounded corners with a border-radius of 5px.
+  - Increase font size to 18px.
+  - Apply a shadow effect for depth.
+
+---
+
+### Exercise 3: Chaining Pseudo-Class with Class Selector
+- **Objective**: Style a `<p>` element with the `.note` class that also has a `:hover` state.
+- **Requirements**:
+  - Change the background color to light blue on hover.
+  - Set the font-weight to bold on hover.
+  - Increase the padding to 15px only when hovered.
+
+---
+
+### Exercise 4: Chaining Descendant Selectors
+- **Objective**: Style any `<span>` inside a `<div>` with the `.card` class.
+- **Requirements**:
+  - Set the font color to dark purple.
+  - Increase font size to 20px.
+  - Make the font italicized.
+
+---
+
+### Exercise 5: Chaining Class and Attribute Selectors
+- **Objective**: Style an `<input>` element with the `.form-control` class that also has a `type="text"` attribute.
+- **Requirements**:
+  - Set the border to 1px solid gray.
+  - Add padding of 8px inside the input box.
+  - Set the background color to light gray.
+  - On focus, change the border color to blue.
+
+---
+
+### Exercise 6: Chaining Element, Class, and Pseudo-Class Selectors
+- **Objective**: Style any `<a>` link with the `.special` class that also has the `:visited` state.
+- **Requirements**:
+  - Change the text color to dark red for visited links.
+  - Set the font-weight to bold.
+  - Underline the text only for visited links.
+
+---
+
+### Exercise 7: Chaining Sibling Selectors with Class
+- **Objective**: Style a `.item` that is immediately preceded by another `.item`.
+- **Requirements**:
+  - Apply a top margin of 20px to add space between siblings.
+  - Change the background color to light green.
+  - Set the font size to 18px.
+
+---
+
+### Exercise 8: Chaining Multiple Pseudo-Classes
+- **Objective**: Style a `<li>` element that is the first child and also has the `.highlight` class.
+- **Requirements**:
+  - Set the background color to light pink.
+  - Make the text bold and centered.
+  - Add padding of 12px.
+-->
